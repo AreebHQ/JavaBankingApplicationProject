@@ -1,0 +1,12 @@
+Jul 07, 2021 11:48:18 PM BankSystem.Bank <init>
+INFO: Application Started!
+Jul 07, 2021 11:48:18 PM BankSystem.Bank <init>
+WARNING: Exception Error! 	 Error reading the Accounts!
+Jul 07, 2021 11:53:17 PM BankSystem.Bank <init>
+INFO: Application Started!
+Jul 07, 2021 11:53:17 PM BankSystem.Bank <init>
+WARNING: Exception Error! 	 Error reading the Accounts!
+Jul 07, 2021 11:54:45 PM BankSystem.Bank <init>
+INFO: Application Started!
+Jul 07, 2021 11:54:45 PM BankSystem.Bank <init>
+WARNING: Exception Error! 	 Error reading the Accounts!

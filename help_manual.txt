@@ -1,0 +1,43 @@
+A&A First Imaginary Bank
+Program Manual
+Terminology: 
+Active – Active Account
+Inactive – Closed Account 
+Start
+Upon Start of the program, the first screen will be the LogIn Screen. This is where you will have to enter LogIn ID (Java345) And Password (J123456) authorized by the system admin.
+Options for more authorized users will be an extension of this program, hence is not included.  
+MainOptions
+After the LogIn Screen, the screen for Main Options will appear which includes following options.
+Open New Account 
+This is to create a new account, here all the details for the new customer will be provided such as; Customer Name, Address, Age, Account Balance, Phone etc. If there is any information missing, the process wont complete and it will show an error until the right information is provided fully and correctly. 
+Deposit
+This option is for depositing into the existing accounts. There is a button to check if the account exists and active before depositing. If the account doesn’t exist, it will appear on screen that account doesn’t exit or is inactive and the deposit process will be denied. If the deposit is processed, the confirmation box will appear and show that the deposit has been processed. 
+Withdraw
+This option is for withdrawing from the existing accounts. There is a button to check if the account exists and active before withdrawing. If the account doesn’t exist, it will appear on screen that account doesn’t exit or is inactive and the withdraw process will be denied. If the withdraw is processed, the confirmation box will appear and show that the withdraw has been processed. 
+Account List
+Here you can see all the lists of existing accounts, either active or inactive(closed) along with the account details. 
+Customer Detail
+This option shows the screen whereby using account number, it will show the details of account and account holder. 
+More Options
+This option will show more options. 
+More Options
+Under more options screen, there are these functions:
+Check Balance
+This option will let you check the balance of existing account through account number and will notify you about the status of the account either if its active or inactive (closed).
+Close Account
+This option will take you to the process of Closing an account. It will ask for the account number and will close the account so there wont be any deposit or withdrawal from his account. 
+Create Login User
+This function is to create another authorized user for the Banking System to login and use the system. This is an extension hence, this is not functional. 
+Go Back
+This option will take you back to the previous screen of Main Options. 
+Menu Bar
+File > Open Log File
+Once you open the window for LogFile, click the Show button at the bottom to see the Bank’s activity log file and Close button to close the window. 
+File > Close
+This option will exit the program. 
+About > About Developers
+Here you can read about the developers of this program. 
+HELP
+This is open a window with Program Manual so explain the functionality of the program. 
+Exit
+This button will close the program. 
