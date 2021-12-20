@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BankSystem.view.WithdrawFXMLController">
+   <top>
+      <VBox alignment="CENTER" prefHeight="28.0" prefWidth="400.0" spacing="5.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <Label text="Withdraw Details">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Separator prefWidth="200.0" />
+         </children>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </VBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane prefHeight="91.0" prefWidth="380.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.0" minWidth="10.0" prefWidth="123.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="267.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="12.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Enter Account No :" />
+                  <TextField fx:id="accNumberField" prefHeight="28.0" prefWidth="262.0" GridPane.columnIndex="1" />
+                  <Button fx:id="checkAccountBtn" mnemonicParsing="false" onAction="#checkifActive" prefHeight="25.0" prefWidth="95.0" text="Check Account" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </GridPane>
+            <Separator prefWidth="200.0" />
+            <Label text="Account Information">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Separator prefWidth="200.0" />
+            <GridPane prefHeight="153.0" prefWidth="380.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.0" minWidth="10.0" prefWidth="122.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="272.0" minWidth="10.0" prefWidth="258.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Account Number :" GridPane.rowIndex="1" />
+                  <Label text="First Name :" GridPane.rowIndex="2" />
+                  <Label text="Last Name :" GridPane.rowIndex="3" />
+                  <Text fx:id="accNumber" strokeType="OUTSIDE" strokeWidth="0.0" text="#00000000" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Text fx:id="first_Name" strokeType="OUTSIDE" strokeWidth="0.0" text="first_Name" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Text fx:id="last_Name" strokeType="OUTSIDE" strokeWidth="0.0" text="last_Name" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="Account Balance :" GridPane.rowIndex="4" />
+                  <Text fx:id="accBalance" strokeType="OUTSIDE" strokeWidth="0.0" text="N/A" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label text="Account Status :" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1">
+                     <children>
+                        <Circle fx:id="statusCircle" fill="#bcbcbc" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Text fx:id="accStatus" strokeType="OUTSIDE" strokeWidth="0.0" text="status" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </GridPane>
+            <Separator prefWidth="200.0" />
+            <Label text="Withdraw">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Separator prefWidth="200.0" />
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.0" minWidth="10.0" prefWidth="122.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="258.0" minWidth="10.0" prefWidth="258.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="13.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Enter Amount :" />
+                  <TextField fx:id="withdrawAmountField" prefHeight="28.0" prefWidth="258.0" GridPane.columnIndex="1" />
+                  <Label text="Result :" GridPane.rowIndex="1" />
+                  <Text fx:id="withdrawResult" strokeType="OUTSIDE" strokeWidth="0.0" text="Withdraw Result" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </GridPane>
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="withdrawBtn" mnemonicParsing="false" onAction="#withdrawAmount" prefHeight="0.0" prefWidth="120.0" text="Withdraw" />
+            <Button fx:id="cancelBtn" mnemonicParsing="false" onAction="#goBackMainOptions" prefWidth="120.0" text="Cancel" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
